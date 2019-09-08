@@ -1,3 +1,17 @@
+/*
+Black: #000000
+White: #FFFFFF
+Orange: #FF8F00
+Blue: #00E8DB
+Pink: #F3339A
+*/
+
+
+
 body {
-  background-color: orange;
+  background-color: black;
+}
+
+p {
+  color: white;
 }
