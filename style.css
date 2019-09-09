@@ -52,7 +52,7 @@ h3 {
 /**********************  Social Links  ******************/
 h4 {
   font-family: var(--futura);
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: lighter;
   color: white;
   margin: 0;
@@ -63,7 +63,7 @@ p {
 }
 
 .social-icon {
-  width: 1.8em;
+  width: 1.3em;
 }
 
 
@@ -85,11 +85,9 @@ p {
 }
 
 .header-bot {
-  width: 80em;
   margin-top: 1em;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .social-row {
