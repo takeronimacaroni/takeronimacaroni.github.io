@@ -1,28 +1,37 @@
 :root {
-  --DBlue: #08212B;
-  --BOrange: #F18805;
-  --PPink: #FF5964;
-  --LGreen: #BDFF5B;
+  --dBlue: #08212B;
+  --bOrange: #F18805;
+  --pPink: #FF5964;
+  --lGreen: #BDFF5B;
+  --futura: Futura,Trebuchet MS,Arial,sans-serif;
+  --lSpartan: 'League Spartan Bold', arial;
 }
 
-
 body {
-  background-color: var(--DBlue);
+  background-color: var(--dBlue);
 }
 
 /*  Big Name  */
 h1 {
   color: white;
-  font-family: 'League Spartan Bold', arial;
-  font-size: 12em;
-  margin: none;
+  font-family: var(--lSpartan);
+  font-size: 7em;
+  margin: 0;
 }
 
 /*  Job Title  */
 h2 {
   color: white;
-  font-family: 'League Spartan Bold', arial;
-  font-size: 6.6em;
+  font-family: var(--lSpartan);
+  font-size: 3.8em;
+  margin: 0;
+}
+
+/*  Category Links  */
+h3 {
+  font-family: var(--futura);
+  font-size: 2em;
+  margin: 0;
 }
 
 p {
