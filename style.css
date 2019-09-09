@@ -10,6 +10,20 @@ body {
   background-color: var(--DBlue);
 }
 
+/*  Big Name  */
+h1 {
+  color: white;
+  font-family: 'League Spartan Bold', arial;
+  font-size: 12em;
+}
+
+/*  Job Title  */
+h2 {
+  color: white;
+  font-family: 'League Spartan Bold', arial;
+  font-size: 6.6em;
+}
+
 p {
   color: white;
 }
