@@ -1,15 +1,13 @@
-/*
-Black: #000000
-White: #FFFFFF
-Orange: #FF8F00
-Blue: #00E8DB
-Pink: #F3339A
-*/
-
+:root {
+  --DBlue: #08212B;
+  --BOrange: #F18805;
+  --PPink: #FF5964;
+  --LGreen: #BDFF5B;
+}
 
 
 body {
-  background-color: black;
+  background-color: var(--DBlue);
 }
 
 p {
