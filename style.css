@@ -7,6 +7,19 @@
   --lSpartan: 'League Spartan Bold', arial;
 }
 
+/* Color IDs */
+#orange {
+  color: var(--bOrange);
+}
+
+#pink {
+  color: var(--pPink);
+}
+
+#green {
+  color: var(--lGreen);
+}
+
 body {
   background-color: var(--dBlue);
 }
@@ -31,9 +44,32 @@ h2 {
 h3 {
   font-family: var(--futura);
   font-size: 2em;
+  font-weight: lighter;
   margin: 0;
 }
 
 p {
   color: white;
+}
+
+#blockify {
+  display: block;
+}
+
+
+.header-top {
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+}
+
+.header-mid {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-mid-content {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  float:left;
 }
