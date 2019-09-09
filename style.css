@@ -48,12 +48,21 @@ h3 {
   margin: 0;
 }
 
+/*  Social Links  */
+h4 {
+  font-family: var(--futura);
+  font-size: 1em;
+  font-weight: lighter;
+  color: white;
+  margin: 0;
+}
+
 p {
   color: white;
 }
 
-#blockify {
-  display: block;
+.social-icon {
+  width: 1.8em;
 }
 
 
@@ -71,5 +80,24 @@ p {
 .header-mid-content {
   margin-left: 1.5em;
   margin-right: 1.5em;
+  float:left;
+}
+
+.header-bot {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.social-row {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.social-row-content {
+  width: auto;
+  margin-right: 1em;
   float:left;
 }
