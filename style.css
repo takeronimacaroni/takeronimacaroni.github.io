@@ -114,3 +114,32 @@ hr {
   width: 1.3em;
 }
 /**************************************************/
+
+/****************Skill Row*************************/
+.skill-row-wrapper {
+  margin-left: 1.5em;
+  display: flex;
+}
+
+.skill-row-content {
+  margin-right: 1.5em;
+  float: left;
+}
+
+.skill-row-name {
+  color: white;
+}
+
+.skill-row-icons {
+  display: flex;
+}
+
+.skill-icon-image {
+  margin-top: 0.5em;
+  margin-right: 1.5em;
+  width: 2.5em;
+  float: left;
+}
+
+
+/***********************************************/
