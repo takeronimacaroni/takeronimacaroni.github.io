@@ -41,7 +41,7 @@ h2 {
   margin: 0;
 }
 
-/*****************  Category Links  *******************/
+/********  Category Links && Skill Titles **************/
 h3 {
   font-family: var(--futura);
   font-size: 2em;
@@ -62,9 +62,15 @@ p {
   color: white;
 }
 
-.social-icon {
-  width: 1.3em;
+hr {
+  color: white;
+  margin-top: 1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
+
+
+/******************* Header ********************/
 
 
 .header-top {
@@ -84,7 +90,7 @@ p {
   float:left;
 }
 
-.header-bot {
+.header-bot-wrapper {
   margin-top: 1em;
   display: flex;
   align-items: center;
@@ -103,3 +109,8 @@ p {
   float:left;
   bottom: 0.2em;
 }
+
+.social-icon {
+  width: 1.3em;
+}
+/**************************************************/
