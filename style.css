@@ -20,6 +20,10 @@
   color: var(--lGreen);
 }
 
+#backgroundBlue {
+  color: var(--dBlue);
+}
+
 body {
   background-color: var(--dBlue);
   margin: 0;
@@ -115,7 +119,7 @@ hr {
 }
 /**************************************************/
 
-/****************Skill Row*************************/
+/****************** Skill Row **********************/
 .skill-row-wrapper {
   margin-left: 1.5em;
   display: flex;
@@ -143,3 +147,58 @@ hr {
 
 
 /***********************************************/
+
+/*********** Project Showcase *************/
+
+.showcase {
+  margin-top: 5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  display: block;
+}
+
+.showcase-title {
+  color: white;
+}
+
+.project-display-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-block {
+  margin: 1.5em;
+  width: 20%;
+}
+
+.project-block-thumbnail {
+  width: 100%;
+  margin-bottom: 0.8em;
+}
+
+.project-block-thumbnail-img {
+  width: 100%;
+}
+
+.project-block-title {
+  width: 100%;
+  padding-top: 5%;
+  background-color: white;
+}
+
+#projTitle {
+  color: var(--dBlue);
+  bottom: -10px;
+}
+
+.project-block-icons {
+  display: flex;
+}
+
+.project-block-icons-img {
+  margin-top: 0.5em;
+  margin-right: 1.5em;
+  width: 2.5em;
+  float: left;
+}
