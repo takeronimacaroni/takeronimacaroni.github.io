@@ -80,6 +80,13 @@ hr {
 .header-top {
   margin-left: 1.5em;
   margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo-top {
+  height: 6em;
+  margin: 1em 5em 1em 1em;
 }
 
 .header-mid {
@@ -189,7 +196,7 @@ hr {
 
 #projTitle {
   color: var(--dBlue);
-  padding-top: 5%;
+  font-size: 2em;
 }
 
 .project-block-icons {
