@@ -164,17 +164,17 @@ hr {
 .project-display-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .project-block {
-  margin: 1.5em;
+  margin: 2em 4em 4em 0px;
   width: 20%;
 }
 
 .project-block-thumbnail {
   width: 100%;
-  margin-bottom: 0.8em;
+  margin: 0;
 }
 
 .project-block-thumbnail-img {
@@ -183,22 +183,23 @@ hr {
 
 .project-block-title {
   width: 100%;
-  padding-top: 5%;
+  margin-top: 0.5em;
   background-color: white;
 }
 
 #projTitle {
   color: var(--dBlue);
-  bottom: -10px;
+  padding-top: 5%;
 }
 
 .project-block-icons {
   display: flex;
+  width: 100%;
 }
 
 .project-block-icons-img {
   margin-top: 0.5em;
-  margin-right: 1.5em;
-  width: 2.5em;
+  margin-right: 1em;
+  width: 10%;
   float: left;
 }
