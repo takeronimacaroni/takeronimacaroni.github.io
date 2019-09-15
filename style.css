@@ -29,6 +29,32 @@ body {
   margin: 0;
 }
 
+input {
+  width: auto;
+}
+
+/************* Button IDs ***********************/
+#btnAi {
+
+}
+
+#btnPs {
+
+}
+
+#btnAe {
+
+}
+
+#btnPr {
+
+}
+
+#btnXd {
+
+}
+
+
 /*****************  Big Name  ********************/
 h1 {
   color: white;
@@ -124,7 +150,7 @@ hr {
 .social-icon {
   width: 1.3em;
 }
-/**************************************************/
+
 
 /****************** Skill Row **********************/
 .skill-row-wrapper {
@@ -149,11 +175,10 @@ hr {
   margin-top: 0.5em;
   margin-right: 1.5em;
   width: 2.5em;
+  height: auto;
   float: left;
 }
 
-
-/***********************************************/
 
 /*********** Project Showcase *************/
 
