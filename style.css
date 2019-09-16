@@ -30,7 +30,7 @@ body {
 }
 
 input {
-  width: auto;
+  width: 3.5em;
 }
 
 /************* Button IDs ***********************/
@@ -174,8 +174,7 @@ hr {
 .skill-icon-image {
   margin-top: 0.5em;
   margin-right: 1.5em;
-  width: 2.5em;
-  height: auto;
+  height: 3.5em;
   float: left;
 }
 
