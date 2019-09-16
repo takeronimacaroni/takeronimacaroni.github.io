@@ -1,8 +1,4 @@
-function sort(projTag) {
-  console.log("selected " + projTag);
-};
-
-projects = [{
+const projects = [{
   title: 'proj1',
   soft: ['Ai', 'Ps', 'Xd'],
   lang: ['html', 'css']
@@ -31,3 +27,16 @@ projects = [{
   soft: ['Ai', 'Xd'],
   lang:[]
 }]
+
+function sort(projTag) {
+  const listOfSoft = ['Ai', 'Ps', 'Ae', 'Pr', 'Xd']
+  const listOfLang = ['html', 'css', 'js', 'vue']
+
+  for(i = 0; i < projects.length; i++) {
+    if (listOfSoft.includes(projTag)) {
+      console.log('Display only ' + projTag);
+    } else {
+      console.log('Display only' + projTag);
+    };
+  };
+};
