@@ -33,6 +33,10 @@ function sortProj(projTag) {
   const listOfSoft = ['Ai', 'Ps', 'Ae', 'Pr', 'Xd']
   const listOfLang = ['html', 'css', 'js', 'vue']
 
+  $(function() {
+    $('project-block').hide();
+  });
+
   const result = []
 
   for(i = 0; i < projects.length; i++) {
@@ -45,6 +49,8 @@ function sortProj(projTag) {
       }
     };
   };
+
+
 
 
 
