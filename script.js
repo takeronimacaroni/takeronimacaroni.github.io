@@ -29,30 +29,38 @@ const projects = [{
   lang:[]
 }]
 
-function sortProj(projTag) {
-  const listOfSoft = ['Ai', 'Ps', 'Ae', 'Pr', 'Xd']
-  const listOfLang = ['html', 'css', 'js', 'vue']
+$(document).ready(function() {
 
-  $(function() {
-    $('project-block').hide();
-  });
+  $('.project-block').addClass("visible");
 
-  const result = []
+  function sortProj(projTag) {
+    const listOfSoft = ['Ai', 'Ps', 'Ae', 'Pr', 'Xd']
+    const listOfLang = ['html', 'css', 'js', 'vue']
+    const result = []
 
-  for(i = 0; i < projects.length; i++) {
-    if (listOfSoft.includes(projTag)) {
-      if (projects[i].soft.includes(projTag)) {
-        result.push(projects[i].title);
-      }} else {
-      if (projects[i].lang.includes(projTag)) {
-        result.push(projects[i].title);
-      }
+    $(function() {
+      $('project-block').removeClass("visible").addClass("hidden");
+    });
+
+    for(i = 0; i < projects.length; i++) {
+      const projNum = i + 1;
+      if (listOfSoft.includes(projTag)) {
+        if (projects[i].soft.includes(projTag)) {
+          result.push(projects[i].title);
+        }} else {
+        if (projects[i].lang.includes(projTag)) {
+          result.push(projects[i].title);
+        }
+      };
     };
+
+    $(funtion(result) {
+      
+    })
+
+    console.log(result);
   };
 
 
 
-
-
-  console.log(result);
-};
+});

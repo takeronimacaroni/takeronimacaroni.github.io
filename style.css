@@ -203,6 +203,14 @@ hr {
   width: 20%;
 }
 
+.hidden>.project-block {
+  display: none;
+}
+
+.visible>.project-block {
+  display: block;
+}
+
 .project-block-thumbnail {
   width: 100%;
   margin: 0;
