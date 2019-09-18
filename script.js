@@ -1,5 +1,6 @@
 const projects = [{
   title: 'proj1',
+  thmb: 'icons/p300x300.png',
   soft: ['Ai', 'Ps', 'Xd'],
   lang: ['html', 'css']
 },{
@@ -12,7 +13,7 @@ const projects = [{
   lang:['js', 'vue']
 },{
   title: 'proj4',
-  soft: ['Ai', 'Xd'],
+  soft: ['Ai', 'Ps', 'Xd'],
   lang:['css']
 },{
   title: 'proj5',
@@ -28,15 +29,24 @@ const projects = [{
   lang:[]
 }]
 
-function sort(projTag) {
+function sortProj(projTag) {
   const listOfSoft = ['Ai', 'Ps', 'Ae', 'Pr', 'Xd']
   const listOfLang = ['html', 'css', 'js', 'vue']
 
+  const result = []
+
   for(i = 0; i < projects.length; i++) {
     if (listOfSoft.includes(projTag)) {
-      console.log('Display only ' + projTag);
-    } else {
-      console.log('Display only' + projTag);
+      if (projects[i].soft.includes(projTag)) {
+        result.push(projects[i].title);
+      }} else {
+      if (projects[i].lang.includes(projTag)) {
+        result.push(projects[i].title);
+      }
     };
   };
+
+
+
+  console.log(result);
 };
