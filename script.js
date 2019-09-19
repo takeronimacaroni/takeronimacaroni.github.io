@@ -29,21 +29,38 @@ const projects = [{
   lang:[]
 }]
 
-$(document).ready(function() {
+function sortProj(projTag) {
+  for (i = 0; i < projects.length; i++) {
+    const projNum = i + 1;
+    const thisBlock = document.getElementById('proj' + projNum);
+    thisBlock.setAttribute('style', 'display:none;');
+    if (projects[i].soft.includes(projTag)) {
+      thisBlock.setAttribute('style', 'display:block;');
+    };
+  };
+};
 
-  $('.project-block').addClass("visible");
+function sortLang(langTag) {
+    for (i = 0; i < projects.length; i++) {
+      const projNum = i + 1;
+      const thisBlock = document.getElementById('proj' + projNum);
+      thisBlock.setAttribute('style', 'display:none;');
+      if (projects[i].lang.includes(langTag)) {
+        thisBlock.setAttribute('style', 'display:block;');
+      };
+    };
+  };
 
+/*
   function sortProj(projTag) {
     const listOfSoft = ['Ai', 'Ps', 'Ae', 'Pr', 'Xd']
     const listOfLang = ['html', 'css', 'js', 'vue']
     const result = []
-
-    $(function() {
-      $('project-block').removeClass("visible").addClass("hidden");
-    });
+    const projBlock = document.querySelectorAll('.project-block');
 
     for(i = 0; i < projects.length; i++) {
       const projNum = i + 1;
+
       if (listOfSoft.includes(projTag)) {
         if (projects[i].soft.includes(projTag)) {
           result.push(projects[i].title);
@@ -55,12 +72,9 @@ $(document).ready(function() {
     };
 
     $(funtion(result) {
-      
+
     })
 
     console.log(result);
   };
-
-
-
-});
+*/
