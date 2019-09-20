@@ -56,7 +56,7 @@ lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'movin/logo.json'
+    path: 'logo.json'
   });
 
 
