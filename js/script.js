@@ -51,7 +51,7 @@ function sortLang(langTag) {
     };
   };
 
-  var logoAnim = lottie.loadAnimation({
+lottie.loadAnimation({
     container: document.getElementById('logo-top'), // the dom element that will contain the animation
     renderer: 'svg',
     loop: true,
