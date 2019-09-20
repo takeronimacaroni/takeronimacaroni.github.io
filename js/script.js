@@ -1,5 +1,5 @@
-lottie.loadAnimation({
-  container: element, // the dom element that will contain the animation
+var logoAnim = lottie.loadAnimation({
+  container: document.getElementById('logo-top'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
   autoplay: true,
