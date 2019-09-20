@@ -1,3 +1,11 @@
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('logo-top'), // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'data.json'
+  });
+
 const projects = [{
   title: 'proj1',
   thmb: 'icons/p300x300.png',
@@ -51,13 +59,7 @@ function sortLang(langTag) {
     };
   };
 
-lottie.loadAnimation({
-    container: document.getElementById('logo-top'), // the dom element that will contain the animation
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'logo.json'
-  });
+
 
 
 /*
