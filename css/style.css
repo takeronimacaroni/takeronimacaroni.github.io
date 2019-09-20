@@ -1,10 +1,12 @@
+
+
 :root {
   --dBlue: #08212B;
   --bOrange: #F18805;
   --pPink: #FF5964;
   --lGreen: #BDFF5B;
   --futura: Futura,Trebuchet MS,Arial,sans-serif;
-  --lSpartan: 'League Spartan Bold', arial;
+  --poppins: 'Poppins', sans-serif;;
 }
 
 /**************** Color IDs ********************/
@@ -58,7 +60,7 @@ input {
 /*****************  Big Name  ********************/
 h1 {
   color: white;
-  font-family: var(--lSpartan);
+  font-family: var(--poppins);
   font-size: 7em;
   margin: 0;
 }
@@ -66,7 +68,7 @@ h1 {
 /******************  Job Title  *******************/
 h2 {
   color: white;
-  font-family: var(--lSpartan);
+  font-family: var(--poppins);
   font-size: 3.8em;
   margin: 0;
 }
