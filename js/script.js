@@ -25,11 +25,11 @@ const projects = [{
   lang:['css']
 },{
   title: 'proj5',
-  soft: ['Ai', 'Xd'],
+  soft: ['Ai', 'Ps'],
   lang:['html']
 },{
   title: 'proj6',
-  soft: ['Ai', 'Xd'],
+  soft: ['Ps'],
   lang:['html']
 },{
   title: 'proj7',
@@ -41,8 +41,10 @@ function sortProj(projTag) {
   for (i = 0; i < projects.length; i++) {
     let projNum = i + 1;
     let thisBlock = document.getElementById('proj' + projNum);
+    $(document.getElementById('proj' + projNum)).fadeTo(400, 0);
     thisBlock.setAttribute('style', 'display:none;');
     if (projects[i].soft.includes(projTag)) {
+    $(document.getElementById('proj' + projNum)).fadeTo(400, 1);
       thisBlock.setAttribute('style', 'display:block;');
     };
   };
