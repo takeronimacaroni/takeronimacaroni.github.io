@@ -41,22 +41,29 @@ function sortProj(projTag) {
   for (i = 0; i < projects.length; i++) {
     let projNum = i + 1;
     let thisBlock = document.getElementById('proj' + projNum);
-    $(document.getElementById('proj' + projNum)).fadeTo(400, 0);
+    $(document.getElementById('proj' + projNum)).fadeTo(200, 0);
     thisBlock.setAttribute('style', 'display:none;');
-    if (projects[i].soft.includes(projTag)) {
-    $(document.getElementById('proj' + projNum)).fadeTo(400, 1);
-      thisBlock.setAttribute('style', 'display:block;');
-    };
   };
+
+for (i = 0; i < projects.length; i++) {
+  let projNum = i + 1;
+  if (projects[i].soft.includes(projTag)) {
+  $(document.getElementById('proj' + projNum)).fadeTo(200, 1);
+  };
+};
 };
 
 function sortLang(langTag) {
     for (i = 0; i < projects.length; i++) {
       let projNum = i + 1;
       let thisBlock = document.getElementById('proj' + projNum);
+      $(document.getElementById('proj' + projNum)).fadeTo(200, 0);
       thisBlock.setAttribute('style', 'display:none;');
+    };
+    for (i = 0; i < projects.length; i++) {
+      let projNum = i + 1;
       if (projects[i].lang.includes(langTag)) {
-        thisBlock.setAttribute('style', 'display:block;');
+        $(document.getElementById('proj' + projNum)).fadeTo(200, 1);
       };
     };
   };
