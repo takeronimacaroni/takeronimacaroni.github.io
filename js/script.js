@@ -33,33 +33,39 @@ const projects = [{
   lang:['html']
 },{
   title: 'proj7',
-  soft: ['Ai', 'Xd'],
+  soft: ['Ae', 'Xd'],
   lang:[]
 }]
 
 function sortProj(projTag) {
+  $('.project-block').fadeTo(300, 0);
+
+  function hideBlock() {$('.project-block').attr('style', 'display:none')};
+  setTimeout(hideBlock, 1000);
+
+  let displayList = [];
   for (i = 0; i < projects.length; i++) {
     let projNum = i + 1;
-    let thisBlock = document.getElementById('proj' + projNum);
-    $(document.getElementById('proj' + projNum)).fadeTo(200, 0);
-    thisBlock.setAttribute('style', 'display:none;');
+    if (projects[i].soft.includes(projTag)) {
+      displayList.push('proj'+projNum);
+    }
   };
+  console.log(displayList);
 
-for (i = 0; i < projects.length; i++) {
-  let projNum = i + 1;
-  if (projects[i].soft.includes(projTag)) {
-  $(document.getElementById('proj' + projNum)).fadeTo(200, 1);
+  function appearProj() {
+    console.log(displayList);
+    $('#' + displayList.join(',#')).fadeTo(300, 1);
   };
-};
+    setTimeout(appearProj, 1001);
 };
 
-function sortLang(langTag) {
-    for (i = 0; i < projects.length; i++) {
-      let projNum = i + 1;
-      let thisBlock = document.getElementById('proj' + projNum);
-      $(document.getElementById('proj' + projNum)).fadeTo(200, 0);
-      thisBlock.setAttribute('style', 'display:none;');
-    };
+/*function sortLang(langTag) {
+  $('#proj1,#proj2,#proj3,#proj4,#proj5,#proj6,#proj7').fadeTo(300, 0);
+
+  function hideBlock() {$('.project-block').attr('style', 'display:none;')};
+  setTimeout(hideBlock, 300);
+
+  function appearLang() {
     for (i = 0; i < projects.length; i++) {
       let projNum = i + 1;
       if (projects[i].lang.includes(langTag)) {
@@ -67,3 +73,6 @@ function sortLang(langTag) {
       };
     };
   };
+  setTimeout(appearLang, 200);
+};
+*/
