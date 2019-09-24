@@ -5,7 +5,7 @@
 var animation = bodymovin.loadAnimation({
     container: document.getElementById('logo-top'), // the dom element that will contain the animation
     renderer: 'svg',
-    loop: true,
+    loop: false,
     autoplay: true,
     path: 'logo.json'
   });
