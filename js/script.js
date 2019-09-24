@@ -1,3 +1,7 @@
+// $(document).ready(function(){
+//   $('.project-block').each(function() {$(this).attr('id', 'shown');});
+// });
+
 var animation = bodymovin.loadAnimation({
     container: document.getElementById('logo-top'), // the dom element that will contain the animation
     renderer: 'svg',
@@ -5,6 +9,8 @@ var animation = bodymovin.loadAnimation({
     autoplay: true,
     path: 'logo.json'
   });
+
+
 
 const projects = [{
   title: 'proj1',
@@ -38,41 +44,61 @@ const projects = [{
 }]
 
 function sortProj(projTag) {
-  $('.project-block').fadeTo(300, 0);
-
-  function hideBlock() {$('.project-block').attr('style', 'display:none')};
-  setTimeout(hideBlock, 1000);
-
   let displayList = [];
-  for (i = 0; i < projects.length; i++) {
-    let projNum = i + 1;
-    if (projects[i].soft.includes(projTag)) {
-      displayList.push('proj'+projNum);
+  let shownItems = document.querySelectorAll('.shown');
+
+  function hideBlock() {$(shownItems).attr('style', 'display:none').removeClass("shown").addClass("hidden")};
+
+  let hiddenItems = document.querySelectorAll('#hidden');
+
+  function sortThru() {
+    for (i = 0; i < projects.length; i++) {
+      let projNum = i + 1;
+      if (projects[i].soft.includes(projTag)) {
+        displayList.push('proj'+projNum);
+      }
     }
   };
-  console.log(displayList);
 
+  // display array
   function appearProj() {
+    $('#' + displayList.join(',#')).fadeTo(200, 1).removeClass("hidden").addClass("shown");
     console.log(displayList);
-    $('#' + displayList.join(',#')).fadeTo(300, 1);
   };
-    setTimeout(appearProj, 1001);
+
+  $(shownItems).fadeTo(200, 0);
+  setTimeout(hideBlock, 200);
+  setTimeout(sortThru, 200);
+  setTimeout(appearProj, 400);
+
 };
 
-/*function sortLang(langTag) {
-  $('#proj1,#proj2,#proj3,#proj4,#proj5,#proj6,#proj7').fadeTo(300, 0);
+function sortLang(langTag) {
+  let displayList = [];
+  let shownItems = document.querySelectorAll('.shown');
 
-  function hideBlock() {$('.project-block').attr('style', 'display:none;')};
-  setTimeout(hideBlock, 300);
+  function hideBlock() {$(shownItems).attr('style', 'display:none').removeClass("shown").addClass("hidden")};
 
-  function appearLang() {
+  let hiddenItems = document.querySelectorAll('#hidden');
+
+  function sortThru() {
     for (i = 0; i < projects.length; i++) {
       let projNum = i + 1;
       if (projects[i].lang.includes(langTag)) {
-        $(document.getElementById('proj' + projNum)).fadeTo(200, 1);
-      };
-    };
+        displayList.push('proj'+projNum);
+      }
+    }
   };
-  setTimeout(appearLang, 200);
+
+  // display array
+  function appearProj() {
+    $('#' + displayList.join(',#')).fadeTo(200, 1).removeClass("hidden").addClass("shown");
+    console.log(displayList);
+  };
+
+  $(shownItems).fadeTo(200, 0);
+  setTimeout(hideBlock, 200);
+  setTimeout(sortThru, 200);
+  setTimeout(appearProj, 400);
+
 };
-*/
