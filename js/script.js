@@ -3,12 +3,52 @@
 // });
 
 var animation = bodymovin.loadAnimation({
-    container: document.getElementById('logo-top'), // the dom element that will contain the animation
-    renderer: 'svg',
-    loop: false,
-    autoplay: true,
-    path: 'logo.json'
-  });
+  container: document.getElementById('logo-top'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'logo.json'
+});
+
+var aiAnimation = bodymovin.loadAnimation({
+  container: document.getElementById('AeIcon'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'AiIcon.json'
+});
+
+var psAnimation = bodymovin.loadAnimation({
+  container: document.getElementById('PsIcon'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'PsIcon.json'
+});
+
+var aeAnimation = bodymovin.loadAnimation({
+  container: document.getElementById('AeIcon'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'AeAnimation.json'
+});
+
+var prAnimation = bodymovin.loadAnimation({
+  container: document.getElementById('PrIcon'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'PrAnimation.json'
+});
+
+var xdAnimation = bodymovin.loadAnimation({
+  container: document.getElementById('XdIcon'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'XdAnimation.json'
+});
 
 
 
