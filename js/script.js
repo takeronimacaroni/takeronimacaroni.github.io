@@ -10,7 +10,7 @@ var animation = bodymovin.loadAnimation({
   path: 'logo.json'
 });
 
-var aiAnimation = bodymovin.loadAnimation({
+/* var aiAnimation = bodymovin.loadAnimation({
   container: document.getElementById('AeIcon'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: false,
@@ -50,7 +50,7 @@ var xdAnimation = bodymovin.loadAnimation({
   path: 'XdAnimation.json'
 });
 
-
+*/
 
 const projects = [{
   title: 'proj1',
