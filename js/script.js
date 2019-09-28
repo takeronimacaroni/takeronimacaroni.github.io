@@ -2,20 +2,22 @@
 //   $('.project-block').each(function() {$(this).attr('id', 'shown');});
 // });
 
+var playAi = document
+
 var animation = bodymovin.loadAnimation({
   container: document.getElementById('logo-top'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: false,
   autoplay: true,
-  path: 'logo.json'
+  path: 'iconExport/logo/logo.json'
 });
 
-/* var aiAnimation = bodymovin.loadAnimation({
-  container: document.getElementById('AeIcon'), // the dom element that will contain the animation
+ var aiAnimation = bodymovin.loadAnimation({
+  container: document.getElementById('AiIcon'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: false,
   autoplay: true,
-  path: 'AiIcon.json'
+  path: 'iconExport/Ai/AiIcon.json'
 });
 
 var psAnimation = bodymovin.loadAnimation({
@@ -23,7 +25,7 @@ var psAnimation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: true,
-  path: 'PsIcon.json'
+  path: 'iconExport/Ps/PsIcon.json'
 });
 
 var aeAnimation = bodymovin.loadAnimation({
@@ -31,7 +33,7 @@ var aeAnimation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: true,
-  path: 'AeAnimation.json'
+  path: 'iconExport/Ae/AeIcon.json'
 });
 
 var prAnimation = bodymovin.loadAnimation({
@@ -39,7 +41,7 @@ var prAnimation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: true,
-  path: 'PrAnimation.json'
+  path: 'iconExport/Pr/PrIcon.json'
 });
 
 var xdAnimation = bodymovin.loadAnimation({
@@ -47,10 +49,9 @@ var xdAnimation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: true,
-  path: 'XdAnimation.json'
+  path: 'iconExport/Xd/XdIcon.json'
 });
 
-*/
 
 const projects = [{
   title: 'proj1',
