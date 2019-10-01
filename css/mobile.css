@@ -62,7 +62,7 @@ h1 {
   color: white;
   font-family: var(--poppins);
   font-weight: 750;
-  font-size: 7em;
+  font-size: 1.5em;
   margin: 0;
 }
 
@@ -70,7 +70,7 @@ h1 {
 h2 {
   color: white;
   font-family: var(--poppins);
-  font-size: 3.8em;
+  font-size: 1em;
   font-weight: 700;
   margin: 0;
 }
@@ -78,7 +78,7 @@ h2 {
 /********  Category Links && Skill Titles **************/
 h3 {
   font-family: var(--futura);
-  font-size: 2em;
+  font-size: 0.8em;
   font-weight: lighter;
   margin: 0;
 }
@@ -86,7 +86,7 @@ h3 {
 /**********************  Social Links  ******************/
 h4 {
   font-family: var(--futura);
-  font-size: 1.3em;
+  font-size: 0.8em;
   font-weight: lighter;
   color: white;
   margin: 0;
@@ -98,90 +98,90 @@ p {
 
 hr {
   color: white;
-  margin-top: 1em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-top: 0em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 
 /******************* Header ********************/
 
+.header {
+  width: 100%;
+  margin-top: 5%;
+}
 
 .header-top {
-  margin-left: 1.5em;
+  margin-left: 1em;
   display: flex;
   justify-content: space-between;
 }
 
 #logo-top {
-  height: 6em;
-  margin: 1em 5em 1em 1em;
+  height: 2em;
+  margin: 0.2em 1em 0em 1em;
 }
 
 .header-mid {
-  display: flex;
+  display: inline;
 }
 
 .header-upper-mid {
-  margin: 0;
+  margin-left: 1em;
   display: flex;
   align-items: center;
 }
 
 .header-upper-mid-content {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin: 0em 0em 0em 0em;
   float:left;
 }
 
 .header-below-mid {
-  margin: 0;
+  margin-left: 1em;
   display: flex;
   align-items: center;
 }
 
 .header-below-mid-content {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-right: 1em;
+  margin-left: 0em;
   float:left;
 }
 
 .header-bot-wrapper {
-  margin-top: 1em;
+  margin-top: 0em;
+  margin-left: 1em;
   display: flex;
   align-items: center;
 }
 
 .social-row {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 0em;
+  margin-right: 0.2em;
   display: flex;
   align-items: center;
 }
 
 .social-row-content {
   width: auto;
-  margin-right: 1em;
+  margin-right: 0.3em;
   float:left;
   bottom: 0.2em;
 }
 
 .social-row-name {
-  width: auto;
-  margin-right: 1em;
-  float:left;
-  bottom: 0.2em;
+  display: none;
 }
 
-
 .social-icon {
-  width: 1.3em;
+  width: 0.8em;
 }
 
 
 /****************** Skill Row **********************/
 .skill-row-wrapper {
-  margin-left: 1.5em;
+  margin-left: 1em;
   display: flex;
 }
 
@@ -200,8 +200,9 @@ hr {
 
 .skill-icon-image {
   margin-top: 0.5em;
-  margin-right: 1.5em;
-  height: 3.5em;
+  margin-right: 0.5em;
+  width:  20%;
+  height: 1em;
   float: left;
 }
 
@@ -209,8 +210,8 @@ hr {
 /*********** Project Showcase *************/
 .showcase {
   margin-top: 3em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
   display: block;
   min-height: 40em;
 }

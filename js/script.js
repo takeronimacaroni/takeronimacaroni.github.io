@@ -2,7 +2,7 @@
 //   $('.project-block').each(function() {$(this).attr('id', 'shown');});
 // });
 
-var playAi = document
+var playAi = document.getElementById('AiIcon');
 
 var animation = bodymovin.loadAnimation({
   container: document.getElementById('logo-top'), // the dom element that will contain the animation
