@@ -118,6 +118,7 @@ hr {
 }
 
 #logo-top {
+  float: right;
   height: 2em;
   margin: 0.2em 1em 0em 1em;
 }
