@@ -29,6 +29,7 @@
 body {
   background-color: var(--dBlue);
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 input {
@@ -180,6 +181,11 @@ hr {
 
 
 /****************** Skill Row **********************/
+.filter-text {
+  margin-left: 1.5em;
+  color: white;
+}
+
 .skill-row-wrapper {
   margin-left: 1.5em;
   display: flex;
@@ -187,6 +193,7 @@ hr {
 
 .skill-row-content {
   margin-right: 1.5em;
+  width: auto;
   float: left;
 }
 
