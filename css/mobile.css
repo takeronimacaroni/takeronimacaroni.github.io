@@ -210,7 +210,7 @@ hr {
 .skill-icon-image {
   margin-top: 0.5em;
   margin-right: 0.5em;
-  width:  20%;
+  width:  auto;
   height: 1em;
   float: left;
 }
