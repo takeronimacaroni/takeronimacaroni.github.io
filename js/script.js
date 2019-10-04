@@ -64,7 +64,7 @@ var cssAnimation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: true,
-  path: 'iconExport/css/css.json'
+  path: 'iconExport/css/cssIcon.json'
 });
 var jsAnimation = bodymovin.loadAnimation({
   container: document.getElementById('jsIcon'), // the dom element that will contain the animation
