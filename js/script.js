@@ -52,6 +52,34 @@ var xdAnimation = bodymovin.loadAnimation({
   path: 'iconExport/Xd/XdIcon.json'
 });
 
+var htmlAnimation = bodymovin.loadAnimation({
+  container: document.getElementById('htmlIcon'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'iconExport/html/html.json'
+});
+var cssAnimation = bodymovin.loadAnimation({
+  container: document.getElementById('cssIcon'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'iconExport/css/css.json'
+});
+var jsAnimation = bodymovin.loadAnimation({
+  container: document.getElementById('jsIcon'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'iconExport/Js/Js.json'
+});
+var vueAnimation = bodymovin.loadAnimation({
+  container: document.getElementById('vueIcon'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: false,
+  autoplay: true,
+  path: 'iconExport/Vue/Vue.json'
+});
 
 const projects = [{
   title: 'proj1',
