@@ -36,6 +36,10 @@ input {
   width: 3.5em;
 }
 
+a {
+  text-decoration: none;
+}
+
 /************* Button IDs ***********************/
 #btnAi {
 

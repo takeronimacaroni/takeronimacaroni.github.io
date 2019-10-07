@@ -26,6 +26,8 @@
   color: var(--dBlue);
 }
 
+/************ Basics *****************/
+
 body {
   background-color: var(--dBlue);
   margin: 0;
@@ -34,6 +36,10 @@ body {
 
 input {
   width: 3.5em;
+}
+
+a {
+  text-decoration: none;
 }
 
 /************* Button IDs ***********************/

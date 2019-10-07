@@ -1,8 +1,15 @@
-// $(document).ready(function(){
-//   $('.project-block').each(function() {$(this).attr('id', 'shown');});
-// });
+ $(document).ready(function(){
+   playAi(aiContainer);
+   playPs(psContainer);
+   playAe(aeContainer);
+   playPr(prContainer);
+   playXd(xdContainer);
+   playHtml(htmlContainer);
+   playCss(cssContainer);
+   playJs(jsContainer);
+   playVue(vueContainer);
+ });
 
-var playAi = document.getElementById('AiIcon');
 
 var animation = bodymovin.loadAnimation({
   container: document.getElementById('logo-top'), // the dom element that will contain the animation
@@ -12,74 +19,132 @@ var animation = bodymovin.loadAnimation({
   path: 'iconExport/logo/logo.json'
 });
 
+var aiContainer = document.getElementById('AiIcon');
+function playAi(aiContainer) {
  var aiAnimation = bodymovin.loadAnimation({
   container: document.getElementById('AiIcon'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: false,
   autoplay: true,
   path: 'iconExport/Ai/AiIcon.json'
-});
+  });
+  aiContainer.addEventListener('mouseenter', function(){
+    aiAnimation.goToAndPlay(1, true);
+  });
+};
 
-var psAnimation = bodymovin.loadAnimation({
+var psContainer = document.getElementById('PsIcon');
+function playPs(psContainer) {
+ var psAnimation = bodymovin.loadAnimation({
   container: document.getElementById('PsIcon'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: false,
   autoplay: true,
   path: 'iconExport/Ps/PsIcon.json'
-});
+  });
+  psContainer.addEventListener('mouseenter', function(){
+    psAnimation.goToAndPlay(1, true);
+  });
+};
 
-var aeAnimation = bodymovin.loadAnimation({
-  container: document.getElementById('AeIcon'), // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  path: 'iconExport/Ae/AeIcon.json'
-});
+var aeContainer = document.getElementById('AeIcon');
+function playAe(aeContainer) {
+ var aeAnimation = bodymovin.loadAnimation({
+   container: document.getElementById('AeIcon'), // the dom element that will contain the animation
+   renderer: 'svg',
+   loop: false,
+   autoplay: true,
+   path: 'iconExport/Ae/AeIcon.json'
+  });
+  aeContainer.addEventListener('mouseenter', function(){
+    aeAnimation.goToAndPlay(1, true);
+  });
+};
 
-var prAnimation = bodymovin.loadAnimation({
-  container: document.getElementById('PrIcon'), // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  path: 'iconExport/Pr/PrIcon.json'
-});
+var prContainer = document.getElementById('PrIcon');
+function playPr(prContainer) {
+ var prAnimation = bodymovin.loadAnimation({
+   container: document.getElementById('PrIcon'), // the dom element that will contain the animation
+   renderer: 'svg',
+   loop: false,
+   autoplay: true,
+   path: 'iconExport/Pr/PrIcon.json'
+  });
+  prContainer.addEventListener('mouseenter', function(){
+    prAnimation.goToAndPlay(1, true);
+  });
+};
 
-var xdAnimation = bodymovin.loadAnimation({
-  container: document.getElementById('XdIcon'), // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  path: 'iconExport/Xd/XdIcon.json'
-});
+var xdContainer = document.getElementById('XdIcon');
+function playXd(xdContainer) {
+ var xdAnimation = bodymovin.loadAnimation({
+   container: document.getElementById('XdIcon'), // the dom element that will contain the animation
+   renderer: 'svg',
+   loop: false,
+   autoplay: true,
+   path: 'iconExport/Xd/XdIcon.json'
+  });
+  xdContainer.addEventListener('mouseenter', function(){
+    xdAnimation.goToAndPlay(1, true);
+  });
+};
 
-var htmlAnimation = bodymovin.loadAnimation({
-  container: document.getElementById('htmlIcon'), // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  path: 'iconExport/html/html.json'
-});
-var cssAnimation = bodymovin.loadAnimation({
-  container: document.getElementById('cssIcon'), // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  path: 'iconExport/css/cssIcon.json'
-});
-var jsAnimation = bodymovin.loadAnimation({
-  container: document.getElementById('jsIcon'), // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  path: 'iconExport/Js/Js.json'
-});
-var vueAnimation = bodymovin.loadAnimation({
-  container: document.getElementById('vueIcon'), // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  path: 'iconExport/Vue/Vue.json'
-});
+var htmlContainer = document.getElementById('htmlIcon');
+function playHtml(htmlContainer) {
+ var htmlAnimation = bodymovin.loadAnimation({
+   container: document.getElementById('htmlIcon'), // the dom element that will contain the animation
+   renderer: 'svg',
+   loop: false,
+   autoplay: true,
+   path: 'iconExport/html/html.json'
+  });
+  htmlContainer.addEventListener('mouseenter', function(){
+    htmlAnimation.goToAndPlay(1, true);
+  });
+};
+
+var cssContainer = document.getElementById('cssIcon');
+function playCss(cssContainer) {
+ var cssAnimation = bodymovin.loadAnimation({
+   container: document.getElementById('cssIcon'), // the dom element that will contain the animation
+   renderer: 'svg',
+   loop: false,
+   autoplay: true,
+   path: 'iconExport/css/cssIcon.json'
+  });
+  cssContainer.addEventListener('mouseenter', function(){
+    cssAnimation.goToAndPlay(1, true);
+  });
+};
+
+var jsContainer = document.getElementById('jsIcon');
+function playJs(jsContainer) {
+ var jsAnimation = bodymovin.loadAnimation({
+   container: document.getElementById('jsIcon'), // the dom element that will contain the animation
+   renderer: 'svg',
+   loop: false,
+   autoplay: true,
+   path: 'iconExport/Js/Js.json'
+  });
+  jsContainer.addEventListener('mouseenter', function(){
+    jsAnimation.goToAndPlay(1, true);
+  });
+};
+
+var vueContainer = document.getElementById('vueIcon');
+function playVue(vueContainer) {
+ var vueAnimation = bodymovin.loadAnimation({
+   container: document.getElementById('vueIcon'), // the dom element that will contain the animation
+   renderer: 'svg',
+   loop: false,
+   autoplay: true,
+   path: 'iconExport/Vue/Vue.json'
+  });
+  vueContainer.addEventListener('mouseenter', function(){
+    vueAnimation.goToAndPlay(1, true);
+  });
+};
+
 
 const projects = [{
   title: 'proj1',
